@@ -23,10 +23,10 @@ const ShopCart = () => {
   const [sum, setSum] = useState(0);
   const [cartPrdList, setCartPrdList] = useState(initData);
   return (
-    <main class="site-main">
-      <div class="main-container">
+    <main className="site-main">
+      <div className="main-container">
         <Step/>
-        <ShoppingBasket cartPrdList={cartPrdList} sum={sum} />
+        <ShoppingBasket cartPrdList={cartPrdList} sum={sum} setSum={setSum} setCartPrdList={setCartPrdList} />
       </div>
     </main>
   )
