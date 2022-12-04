@@ -6,7 +6,7 @@ const CartItem = (props)=>{
   const {prd, cartPrdList, setCartPrdList} = props;
   const [count, setCount] = useState(prd.quantity)
   useEffect(()=>{
-    console.log(cartPrdList);
+    // console.log(cartPrdList);
     const newData = cartPrdList?.map((info)=>{
       if(info.id.toString() === prd.id.toString()){
         info.quantity = count
