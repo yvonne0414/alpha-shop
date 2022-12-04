@@ -32,7 +32,7 @@ const CartItem = (props)=>{
             </div>
           </div>
         </div>
-        <div className="price">$ {prd.price*count}</div>
+        <div className="price">$ {prd.price}</div>
       </div>
     </div>
   )

@@ -1,12 +1,12 @@
 import Progress from "./Progress";
 import Form from "./Form";
 import ProgressControl from "./ProgressControl";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 const Step = () => {
   const [step, setStep] = useState("1");
-  useEffect(()=>{
-    console.log(step);
-  }, [step])
+  // useEffect(()=>{
+  //   console.log(step);
+  // }, [step])
   return (
     <>
       <section className="register-container col col-lg-6 col-sm-12" data-phase={step} data-total-price="0">

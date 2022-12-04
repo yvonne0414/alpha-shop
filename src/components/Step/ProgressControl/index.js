@@ -1,8 +1,11 @@
 import {ReactComponent as RightArrow} from '../../../assets/icons/right-arrow.svg' 
 import {ReactComponent as LeftArrow} from '../../../assets/icons/left-arrow.svg'
+import { useContext } from "react";
+import { CartContext } from "../../../contexts/CartContext";
 
 const ProgressControl = (props)=>{
   const {setStep} = props
+  const { handleFormSubmit} = useContext(CartContext)
   return (
     <section className="progress-control-container col col-lg-6 col-sm-12">
           <section className="button-group col col-12" data-phase="address">
@@ -34,7 +37,7 @@ const ProgressControl = (props)=>{
               </div>
               上一步
             </button>
-            <button className="next">
+            <button className="next"  onClick={handleFormSubmit}>
               確認下單
             </button>
           </section>
